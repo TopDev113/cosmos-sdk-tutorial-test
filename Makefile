@@ -10,12 +10,12 @@ ifeq (,$(VERSION))
   endif
 endif
 
+
 # Update the ldflags with the app, client & server names
 ldflags = -X github.com/cosmos/cosmos-sdk/version.Name=mini \
 	-X github.com/cosmos/cosmos-sdk/version.AppName=minid \
 	-X github.com/cosmos/cosmos-sdk/version.Version=$(VERSION) \
 	-X github.com/cosmos/cosmos-sdk/version.Commit=$(COMMIT)
-
 BUILD_FLAGS := -ldflags '$(ldflags)'
 
 ###########
@@ -32,3 +32,8 @@ install:
 
 init:
 	./scripts/init.sh
+
+print-version:
+	@echo $(VERSION)
+print-ldflags:
+	@echo $(BUILD_FLAGS)

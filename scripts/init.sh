@@ -1,6 +1,5 @@
 #!/bin/bash
-
-rm -r ~/.minid || true
+[ -d ~/.minid ] && rm -r ~/.minid
 MINID_BIN=$(which minid)
 # configure minid
 $MINID_BIN config set client chain-id demo
