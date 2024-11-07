@@ -1,5 +1,6 @@
 # Mini - A minimal Cosmos SDK chain
 
+Readme
 This repository contains an example of a tiny, but working Cosmos SDK chain.
 It uses the least modules possible and is intended to be used as a starting point for building your own chain, without all the boilerplate that other tools generate. It is a simpler version of Cosmos SDK's [simapp](https://github.com/cosmos/cosmos-sdk/tree/main/simapp).
 
@@ -23,4 +24,4 @@ minid start # start the chain
 
 ## Useful links
 
-* [Cosmos-SDK Documentation](https://docs.cosmos.network/)
+- [Cosmos-SDK Documentation](https://docs.cosmos.network/)
